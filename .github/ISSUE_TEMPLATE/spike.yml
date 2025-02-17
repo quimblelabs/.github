@@ -1,0 +1,80 @@
+name: Spike
+description: Template for research or exploration tasks to reduce technical uncertainty
+title: "[SPIKE] "
+labels: ["spike"]
+body:
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objective
+      description: "What specific question or problem are you trying to answer or solve?"
+      placeholder: |
+        Example: Evaluate whether Library X or Library Y is better suited for implementing feature Z.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: "Define the boundaries of the spike. What will be included and excluded?"
+      placeholder: |
+        Example:
+        - Included: Performance benchmarking, API compatibility, and documentation quality.
+        - Excluded: Implementation details or production-ready code.
+  - type: input
+    id: timebox
+    attributes:
+      label: Timebox
+      description: "How much time is allocated for this spike? (e.g., 2 days, 1 week)"
+      placeholder: "Example: 3 days"
+    validations:
+      required: true
+  - type: textarea
+    id: deliverables
+    attributes:
+      label: Expected Deliverables
+      description: "What will be produced at the end of the spike?"
+      placeholder: |
+        Example:
+        - A written report comparing Library X and Library Y.
+        - A proof-of-concept implementation.
+        - Recommendations for next steps.
+  - type: textarea
+    id: success_criteria
+    attributes:
+      label: Success Criteria
+      description: "How will you know if the spike was successful?"
+      placeholder: |
+        Example:
+        - Clear recommendation on which library to use.
+        - Identified risks and mitigation strategies.
+  - type: textarea
+    id: resources
+    attributes:
+      label: Resources
+      description: "List any resources, tools, or documentation that will be used."
+      placeholder: |
+        Example:
+        - Library X documentation: [link]
+        - Library Y GitHub repo: [link]
+        - Performance testing tool: [link]
+  - type: textarea
+    id: risks
+    attributes:
+      label: Risks and Assumptions
+      description: "List any potential risks or assumptions for this spike."
+      placeholder: |
+        Example:
+        - Risk: Library X may not support feature Z.
+        - Assumption: Library Y's performance is sufficient for our use case.
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: "How urgent is this spike?"
+      options:
+        - "High: Blocking critical work"
+        - "Medium: Important but not urgent"
+        - "Low: Nice to have"
+    validations:
+      required: true

@@ -1,0 +1,24 @@
+name: Task
+description: Concrete technical work item
+title: "[TASK] "
+labels: ["task"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Technical Description
+      description: "Include implementation details and code references"
+      placeholder: "Example: Refactor payment service class to implement new API client"
+  - type: checkboxes
+    id: requirements
+    attributes:
+      label: Completion Requirements
+      options:
+        - label: Unit tests added
+        - label: Documentation updated
+        - label: Peer review completed
+  - type: input
+    id: time_estimate
+    attributes:
+      label: Time Estimate
+      placeholder: "Use Fibonacci points (1, 2, 3, 5, 8)"

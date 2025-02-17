@@ -1,0 +1,27 @@
+name: User Story
+description: End-user functionality requirement
+title: "[USER STORY] "
+labels: ["user-story"]
+body:
+  - type: textarea
+    id: story
+    attributes:
+      label: User Story
+      description: "Format: As a [role], I want [feature] so that [benefit]"
+      placeholder: "Example: As a shopper, I want saved payment methods so I can checkout faster"
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria
+      description: "List requirements using Gherkin syntax (Given/When/Then)"
+      placeholder: |
+        Given I'm logged in
+        When I view my profile
+        Then I see 3 most recent orders
+  - type: input
+    id: wireframe
+    attributes:
+      label: Design Reference
+      placeholder: "URL to Figma/Sketch file or screenshot"
