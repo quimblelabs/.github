@@ -1,0 +1,38 @@
+name: Epic
+description: Template for large initiatives spanning multiple sprints/teams
+title: "[EPIC] "
+labels: ["epic"]
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Epic Title
+      description: "Convention: Use action-oriented language (e.g., 'Payment Gateway Integration')"
+    validations:
+      required: true
+  - type: textarea
+    id: objective
+    attributes:
+      label: Business Objective
+      description: "What strategic goal does this epic serve? (1-2 sentences)"
+      placeholder: "Example: Increase conversion rate by reducing checkout steps"
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: Success Metrics
+      description: "List measurable outcomes (SMART format)"
+      placeholder: |
+        - Metric 1: Achieve 95% successful payment processing
+        - Metric 2: Reduce checkout abandonment by 30%
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Strategic Priority
+      options:
+        - "Company Objective"
+        - "Department Goal"
+        - "Feature Enhancement"
+    validations:
+      required: true

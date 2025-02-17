@@ -1,0 +1,28 @@
+name: Bug Report
+description: Unexpected behavior or defect report
+title: "[BUG] "
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity Level
+      options:
+        - "P0: System Down"
+        - "P1: Critical Function Broken"
+        - "P2: Major Impact"
+        - "P3: Minor Issue"
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction Steps
+      description: "Numbered list of exact steps to trigger issue"
+      placeholder: |
+        1. Navigate to X page
+        2. Click Y button 3 times
+        3. Observe console error
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment Details
+      placeholder: "OS: Windows 10 v21H2\nBrowser: Chrome 107.0.5304.107"

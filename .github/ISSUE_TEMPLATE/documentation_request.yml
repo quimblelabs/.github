@@ -1,0 +1,32 @@
+name: Documentation Request
+description: Content creation or improvement request
+title: "[DOCS] "
+labels: ["docs"]
+body:
+  - type: dropdown
+    id: doc_type
+    attributes:
+      label: Documentation Type
+      options:
+        - "User Guide"
+        - "API Reference"
+        - "Technical Design"
+        - "Tutorial"
+  - type: textarea
+    id: content_scope
+    attributes:
+      label: Content Requirements
+      description: "List sections/features to cover"
+      placeholder: |
+        - Authentication flow diagrams
+        - Error code reference table
+        - Rate limiting thresholds
+  - type: checkboxes
+    id: delivery
+    attributes:
+      label: Delivery Format
+      options:
+        - label: In-app help
+        - label: PDF manual
+        - label: Knowledge base article
+        - label: Video tutorial
